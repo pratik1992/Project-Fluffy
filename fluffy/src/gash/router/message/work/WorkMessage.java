@@ -1,0 +1,29 @@
+package gash.router.message.work;
+
+
+import pipe.common.Common;
+import pipe.work.Work;
+
+/**
+ * @author karanbir
+ * @since 25 Oct, 2016.
+ */
+public abstract class WorkMessage {
+    protected Work.WorkMessage.Builder workBuilder;
+
+    public WorkMessage(int nodeId) {
+        Common.Header.Builder headerBuilder = Common.Header.newBuilder();
+        headerBuilder.setNodeId(nodeId);
+        headerBuilder.setDestination(-1);
+        headerBuilder.setTime(System.currentTimeMillis());
+        workBuilder = Work.WorkMessage.newBuilder();
+        workBuilder.setHeader(headerBuilder);
+        workBuilder.setSecret(1234);
+    }
+
+    public abstract Work.WorkMessage getMessage();
+
+
+
+
+}
