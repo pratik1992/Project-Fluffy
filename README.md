@@ -1,4 +1,4 @@
-#Project-Fluffy#
+# Project-Fluffy #
 
 Project-Fluffy is an effort towards developing a system that can store, retrieve, update and delete data serving across multiple nodes.The functionality is similar to storage on cloud or on a network of servers with the features of fault tolerance and file consistency. With the emphasis on device transparency, work balance across stacks and failures survival, We design and implement a new approach to storing, finding, deleting, and updating data in a massive, decentralized, heterogeneous platform. The following features are part of the scope for this project: 
 
