@@ -4,7 +4,7 @@ Project-Fluffy is an effort towards developing a system that can store, retrieve
 
 1.Search capabilities with real-time monitoring of work and data.
 
-2.Constant leader election when timeout on distributed system.
+2.Constant leader election when the leader goes down.
 
 3.Handling data storage and massive registration processes to store, share and delete.
 
